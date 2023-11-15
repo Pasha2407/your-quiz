@@ -1,17 +1,32 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import css from "./Layout.module.css";
 
 export const Layout = () => {
   return (
     <div>
-      <header>
+      <header className={css.Header}>
         <nav>
-          <Link to="/" end>
-            Home
-          </Link>
-          <Link to="/result">Result</Link>
+          <NavLink
+            to="/"
+            style={({ isActive }) => ({
+              border: isActive ? "ridge white" : "",
+            })}
+          >
+            HOME
+          </NavLink>
+          <NavLink
+            to="/result"
+            style={({ isActive }) => ({
+              border: isActive ? "ridge white" : "",
+            })}
+          >
+            RESULT
+          </NavLink>
         </nav>
       </header>
-      <Outlet />
+      <main className={css.Main}>
+        <Outlet />
+      </main>
     </div>
   );
 };

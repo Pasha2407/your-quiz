@@ -1,0 +1,25 @@
+.Header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(68, 75, 94);
+}
+
+.Header>nav {
+    padding: 15px 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.Header>nav>a {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: solid rgb(68, 75, 94);
+}
+
+.Header>nav>a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}

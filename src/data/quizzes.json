@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1",
+        "image": "image",
+        "name": "Пірати Карибського моря",
+        "amount": 2,
+        "quiz": [
+            {
+                "id": 1,
+                "question": "Джек пірат?",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Так"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Ні"
+                    }
+                ],
+                "rightAnswerId": 1
+            },
+            {
+                "id": 2,
+                "question": "Що було в скриньці",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Золото"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Серце"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Пісок"
+                    }
+                ],
+                "rightAnswerId": 2
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "image": "image",
+        "name": "Гарі Поттер",
+        "amount": 2,
+        "quiz": [
+            {
+                "id": 1,
+                "question": "Як звали директора Хогвартса",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Стів"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Елеван"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Альбус"
+                    }
+                ],
+                "rightAnswerId": 3
+            },
+            {
+                "id": 2,
+                "question": "Фамілія Гаррі",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Потер"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Рузвальд"
+                    }
+                ],
+                "rightAnswerId": 1
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "image": "image",
+        "name": "Месники",
+        "amount": 0
+    }
+]
