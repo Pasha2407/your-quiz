@@ -1,9 +1,10 @@
 [
     {
         "id": "1",
-        "image": "image",
+        "image": "pirats.PNG",
         "name": "Пірати Карибського моря",
-        "amount": 2,
+        "amount": 3,
+        "background": "https://eneyida.tv/uploads/posts/2019-11/1575112865_18.jpg",
         "quiz": [
             {
                 "id": 1,
@@ -11,11 +12,13 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Так"
+                        "text": "Так",
+                        "color": "#52ff5d"
                     },
                     {
                         "id": 2,
-                        "text": "Ні"
+                        "text": "Ні",
+                        "color": "#ff7a7f"
                     }
                 ],
                 "rightAnswerId": 1
@@ -26,26 +29,57 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Золото"
+                        "text": "Золото",
+                        "color": "#ff7a7f"
                     },
                     {
                         "id": 2,
-                        "text": "Серце"
+                        "text": "Серце",
+                        "color": "#52ff5d"
                     },
                     {
                         "id": 3,
-                        "text": "Пісок"
+                        "text": "Пісок",
+                        "color": "#ff7a7f"
                     }
                 ],
                 "rightAnswerId": 2
+            },
+            {
+                "id": 3,
+                "question": "Як називався корабель Джека Горобця",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Летючий Голандець",
+                        "color": "#ff7a7f"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Серце Моря",
+                        "color": "#ff7a7f"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Чорна Перлина",
+                        "color": "#52ff5d"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Плакуча Мері",
+                        "color": "#ff7a7f"
+                    }
+                ],
+                "rightAnswerId": 3
             }
         ]
     },
     {
         "id": "2",
-        "image": "image",
-        "name": "Гарі Поттер",
+        "image": "harry-poter.PNG",
+        "name": "Гаррі Поттер",
         "amount": 2,
+        "background": "https://content.rozetka.com.ua/goods/images/big/84296882.jpg",
         "quiz": [
             {
                 "id": 1,
@@ -53,15 +87,18 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Стів"
+                        "text": "Стів",
+                        "color": "#ff7a7f"
                     },
                     {
                         "id": 2,
-                        "text": "Елеван"
+                        "text": "Елеван",
+                        "color": "#ff7a7f"
                     },
                     {
                         "id": 3,
-                        "text": "Альбус"
+                        "text": "Альбус",
+                        "color": "#52ff5d"
                     }
                 ],
                 "rightAnswerId": 3
@@ -72,11 +109,13 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Потер"
+                        "text": "Потер",
+                        "color": "#52ff5d"
                     },
                     {
                         "id": 2,
-                        "text": "Рузвальд"
+                        "text": "Рузвальд",
+                        "color": "#ff7a7f"
                     }
                 ],
                 "rightAnswerId": 1
@@ -85,8 +124,108 @@
     },
     {
         "id": "3",
-        "image": "image",
+        "image": "avengers.PNG",
         "name": "Месники",
-        "amount": 0
+        "amount": 4,
+        "background": "https://i.ytimg.com/vi/5PxaT3k8UI8/maxresdefault.jpg",
+        "quiz": [
+            {
+                "id": 1,
+                "question": "Хто вбив Локі",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Тор",
+                        "color": "#ff7a7f"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Хела",
+                        "color": "#ff7a7f"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Танос",
+                        "color": "#52ff5d"
+                    }
+                ],
+                "rightAnswerId": 3
+            },
+            {
+                "id": 2,
+                "question": "Хто старіший в класичному складі Месників",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Капітан Америка",
+                        "color": "#ff7a7f"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Тоні Старк",
+                        "color": "#ff7a7f"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Тор",
+                        "color": "#52ff5d"
+                    }
+                ],
+                "rightAnswerId": 3
+            },
+            {
+                "id": 3,
+                "question": "Скільки було камнів безкінечності",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "5",
+                        "color": "#ff7a7f"
+                    },
+                    {
+                        "id": 2,
+                        "text": "6",
+                        "color": "#52ff5d"
+                    },
+                    {
+                        "id": 3,
+                        "text": "7",
+                        "color": "#ff7a7f"
+                    }
+                ],
+                "rightAnswerId": 2
+            },
+            {
+                "id": 4,
+                "question": "Який статус багатства в Тоні Старка",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Міліонер",
+                        "color": "#ff7a7f"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Міліардер",
+                        "color": "#52ff5d"
+                    }
+                ],
+                "rightAnswerId": 2
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "image": "naruto.PNG",
+        "name": "Наруто",
+        "amount": 0,
+        "background": "https://cdn.saske.tv/uploads/2019/06/poster.jpg"
+    },
+    {
+        "id": "5",
+        "image": "game-of-thrones.PNG",
+        "name": "Ігра Престолів",
+        "amount": 0,
+        "background": "https://lifeimg.pravda.com/images/doc/6/3/63a8973-s8-trailer-1920.jpg"
     }
 ]

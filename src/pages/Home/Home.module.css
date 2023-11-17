@@ -1,6 +1,15 @@
+.Container {
+    padding: 15px 40px;
+}
+
+.Container>h2 {
+    margin: 0;
+}
+
 .Container>ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     row-gap: 20px;
-    column-gap: 20px;
+    justify-items: center;
+    padding-left: 0;
 }

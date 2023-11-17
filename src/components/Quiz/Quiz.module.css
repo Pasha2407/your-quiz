@@ -1,0 +1,78 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgb(162, 180, 230);
+    background: linear-gradient(328deg, rgba(106, 128, 187, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
+    border: 3px solid rgb(73, 85, 117);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 30px 20px 30px;
+}
+
+.List {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.List>li {
+    border: 3px solid rgb(73, 85, 117);
+    border-radius: 15px;
+    padding: 5px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.List>li:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.Next,
+.Finish,
+.Link {
+    display: flex;
+    justify-content: center;
+}
+
+.Next>button,
+.Finish>button {
+    padding: 10px 20px 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: white;
+}
+
+.Next>button {
+    border: 2px solid rgb(73, 85, 117);
+}
+
+.Next>button:hover,
+.Link>a:hover {
+    background-color: rgb(73, 85, 117);
+    color: white;
+}
+
+.Finish>button {
+    border: 2px solid #4CAF50;
+}
+
+.Finish>button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.Link>a {
+    padding: 8px 20px 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: white;
+    border: 2px solid rgb(73, 85, 117);
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}

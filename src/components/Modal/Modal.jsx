@@ -1,38 +1,30 @@
-import { useState } from "react";
 import css from "./Modal.module.css";
+import { Quiz } from "components/Quiz/Quiz";
 
-export const Modal = ({ name, amount, quiz, exit }) => {
-  const [activeQuestion, setActiveQuestion] = useState(0);
-
-  const nextQuestion = () => {
-    setActiveQuestion(activeQuestion + 1);
-  };
-
+export const Modal = ({ background, name, amount, quiz, closeModal }) => {
   return (
-    <div className={css.Container}>
-      <main>
-        <button onClick={exit}>exit</button>
-        Тест {name}
-        {quiz ? (
-          <section>
-            <i>
-              Питання {activeQuestion + 1} з {amount}
-            </i>
-            <b>{quiz[activeQuestion].question}</b>
-            <ul>
-              {quiz[activeQuestion].answers.map((itme) => (
-                <li key={itme.id}>{itme.text}</li>
-              ))}
-            </ul>
-            <i>Правельна відповідь = {quiz[activeQuestion].rightAnswerId}</i>
-          </section>
-        ) : (
-          <i>Тест не готовий</i>
-        )}
-        {quiz && activeQuestion < 1 && (
-          <button onClick={nextQuestion}>next</button>
-        )}
-      </main>
+    <div className={css.Wrapper}>
+      <div
+        className={css.ContainerBackground}
+        style={{
+          backgroundImage: `url(${background})`,
+        }}
+      >
+        <div className={css.Container}>
+          <div>
+            <button onClick={closeModal}>EXIT</button>
+          </div>
+          <header>
+            <span>Вікторина по фільму</span>
+            <h3>{name}</h3>
+          </header>
+          {quiz ? (
+            <Quiz name={name} quiz={quiz} amount={amount} />
+          ) : (
+            <i>Тест не готовий</i>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,30 @@
+.Container {
+    padding: 10px 50px;
+    margin: 0;
+}
+
+.Container>h2 {
+    margin: 0;
+}
+
+.ActiveItem,
+.Item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 3px solid rgb(73, 85, 117);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+.ActiveItem {
+    background-color: aquamarine;
+    margin-bottom: 20px;
+}
+
+.Item {
+    margin: 15px 0;
+    background: rgb(162, 180, 230);
+    background: linear-gradient(328deg, rgba(106, 128, 187, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
+}

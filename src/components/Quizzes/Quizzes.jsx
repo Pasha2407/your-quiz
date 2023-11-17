@@ -2,7 +2,7 @@ import css from "./Quizzes.module.css";
 import { Modal } from "components/Modal/Modal";
 import { useState } from "react";
 
-export const Quizzes = ({ image, name, amount, quiz }) => {
+export const Quizzes = ({ image, name, amount, quiz, background }) => {
   const [isModal, setIsModal] = useState(false);
 
   const openModal = () => {
@@ -15,12 +15,24 @@ export const Quizzes = ({ image, name, amount, quiz }) => {
 
   return (
     <div className={css.Container}>
-      <b>{image}</b>
-      <p>{name}</p>
-      <p>Кількість питань {amount}</p>
-      <button onClick={openModal}>Play</button>
+      <div>
+        <img src={require(`data/images/${image}`)} alt=""></img>
+      </div>
+      <section className={css.Description}>
+        <h4>{name}</h4>
+        <p>Кількість питань {amount}</p>
+        <div>
+          <button onClick={openModal}>PLAY</button>
+        </div>
+      </section>
       {isModal && (
-        <Modal name={name} amount={amount} quiz={quiz} exit={closeModal} />
+        <Modal
+          background={background}
+          name={name}
+          amount={amount}
+          quiz={quiz}
+          closeModal={closeModal}
+        />
       )}
     </div>
   );

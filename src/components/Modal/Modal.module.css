@@ -1,27 +1,61 @@
-.Container {
+.Wrapper {
     position: absolute;
+    z-index: 99;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(1px);
+}
+
+.ContainerBackground {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.Container {
+    width: 750px;
+    border-radius: 20px;
+    height: 450px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(4px);
 }
 
-.Container>main {
-    width: 500px;
-    background-color: white;
-    border-radius: 20px;
-    height: 300px;
-    padding: 20px;
+.Container>div {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.Container>main>section {
+.Container>div>button {
+    padding: 5px 10px 4px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: white;
+    border: 2px solid #af4c4c;
+}
+
+.Container>div>button:hover {
+    background-color: #af4c4c;
+    color: white;
+}
+
+.Container>header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.Container>header>h3 {
+    margin: 0;
 }
