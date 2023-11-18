@@ -2,7 +2,7 @@ import css from "./Home.module.css";
 import dataQuizzes from "data/quizzes.json";
 import { Quizzes } from "components/Quizzes/Quizzes";
 
-const Home = () => {
+export const Home = () => {
   return (
     <div className={css.Container}>
       <h2>Вікторини</h2>
@@ -21,5 +21,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

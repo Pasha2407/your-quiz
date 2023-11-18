@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 10px;
     background: rgb(162, 180, 230);
-    background: linear-gradient(328deg, rgba(106, 128, 187, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
+    background: linear-gradient(0deg, rgba(106, 128, 187, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
     border: 3px solid rgb(73, 85, 117);
     border-radius: 20px;
     margin-top: 20px;
@@ -26,8 +26,15 @@
 }
 
 .List>li:hover {
+    cursor: var(--hover-cursor) !important;
+}
+
+.HoverItem {
+    transition-duration: 0.3s;
+}
+
+.HoverItem:hover {
     background-color: aquamarine;
-    cursor: pointer;
 }
 
 .Next,

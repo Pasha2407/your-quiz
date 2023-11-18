@@ -1,6 +1,20 @@
+import { useState, useEffect } from "react";
 import css from "./Result.module.css";
-const Result = () => {
-  const results = JSON.parse(localStorage.getItem("results")) ?? [];
+
+export const Result = () => {
+  const [results, setResults] = useState(
+    () => JSON.parse(localStorage.getItem("results")) ?? []
+  );
+
+  const deleteResult = (id) => {
+    setResults(results.filter((item) => item.id !== id));
+  };
+
+  useEffect(() => {
+    const changedResults = JSON.stringify(results);
+    localStorage.setItem("results", changedResults);
+  }, [results]);
+
   return (
     <ul className={css.Container}>
       <h2>Результат</h2>
@@ -37,10 +51,13 @@ const Result = () => {
             <span>
               Результат: правельно<b> {item.result}</b> з <b>{item.amount}</b>
             </span>
+            <div>
+              <button type="button" onClick={() => deleteResult(item.id)}>
+                Delete
+              </button>
+            </div>
           </li>
         ))}
     </ul>
   );
 };
-
-export default Result;

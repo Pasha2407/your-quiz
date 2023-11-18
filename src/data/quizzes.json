@@ -12,13 +12,11 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Так",
-                        "color": "#52ff5d"
+                        "text": "Так"
                     },
                     {
                         "id": 2,
-                        "text": "Ні",
-                        "color": "#ff7a7f"
+                        "text": "Ні"
                     }
                 ],
                 "rightAnswerId": 1
@@ -29,18 +27,15 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Золото",
-                        "color": "#ff7a7f"
+                        "text": "Золото"
                     },
                     {
                         "id": 2,
-                        "text": "Серце",
-                        "color": "#52ff5d"
+                        "text": "Серце"
                     },
                     {
                         "id": 3,
-                        "text": "Пісок",
-                        "color": "#ff7a7f"
+                        "text": "Пісок"
                     }
                 ],
                 "rightAnswerId": 2
@@ -51,23 +46,19 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Летючий Голандець",
-                        "color": "#ff7a7f"
+                        "text": "Летючий Голандець"
                     },
                     {
                         "id": 2,
-                        "text": "Серце Моря",
-                        "color": "#ff7a7f"
+                        "text": "Серце Моря"
                     },
                     {
                         "id": 3,
-                        "text": "Чорна Перлина",
-                        "color": "#52ff5d"
+                        "text": "Чорна Перлина"
                     },
                     {
                         "id": 4,
-                        "text": "Плакуча Мері",
-                        "color": "#ff7a7f"
+                        "text": "Плакуча Мері"
                     }
                 ],
                 "rightAnswerId": 3
@@ -87,18 +78,15 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Стів",
-                        "color": "#ff7a7f"
+                        "text": "Стів"
                     },
                     {
                         "id": 2,
-                        "text": "Елеван",
-                        "color": "#ff7a7f"
+                        "text": "Елеван"
                     },
                     {
                         "id": 3,
-                        "text": "Альбус",
-                        "color": "#52ff5d"
+                        "text": "Альбус"
                     }
                 ],
                 "rightAnswerId": 3
@@ -109,13 +97,11 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Потер",
-                        "color": "#52ff5d"
+                        "text": "Потер"
                     },
                     {
                         "id": 2,
-                        "text": "Рузвальд",
-                        "color": "#ff7a7f"
+                        "text": "Рузвальд"
                     }
                 ],
                 "rightAnswerId": 1
@@ -135,18 +121,15 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Тор",
-                        "color": "#ff7a7f"
+                        "text": "Тор"
                     },
                     {
                         "id": 2,
-                        "text": "Хела",
-                        "color": "#ff7a7f"
+                        "text": "Хела"
                     },
                     {
                         "id": 3,
-                        "text": "Танос",
-                        "color": "#52ff5d"
+                        "text": "Танос"
                     }
                 ],
                 "rightAnswerId": 3
@@ -157,18 +140,15 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Капітан Америка",
-                        "color": "#ff7a7f"
+                        "text": "Капітан Америка"
                     },
                     {
                         "id": 2,
-                        "text": "Тоні Старк",
-                        "color": "#ff7a7f"
+                        "text": "Тоні Старк"
                     },
                     {
                         "id": 3,
-                        "text": "Тор",
-                        "color": "#52ff5d"
+                        "text": "Тор"
                     }
                 ],
                 "rightAnswerId": 3
@@ -179,18 +159,15 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "5",
-                        "color": "#ff7a7f"
+                        "text": "5"
                     },
                     {
                         "id": 2,
-                        "text": "6",
-                        "color": "#52ff5d"
+                        "text": "6"
                     },
                     {
                         "id": 3,
-                        "text": "7",
-                        "color": "#ff7a7f"
+                        "text": "7"
                     }
                 ],
                 "rightAnswerId": 2
@@ -201,13 +178,11 @@
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Міліонер",
-                        "color": "#ff7a7f"
+                        "text": "Міліонер"
                     },
                     {
                         "id": 2,
-                        "text": "Міліардер",
-                        "color": "#52ff5d"
+                        "text": "Міліардер"
                     }
                 ],
                 "rightAnswerId": 2

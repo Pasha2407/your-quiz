@@ -20,7 +20,7 @@ export const Layout = () => {
               border: isActive ? "ridge white" : "",
             })}
           >
-            RESULT
+            RESULTS
           </NavLink>
         </nav>
       </header>

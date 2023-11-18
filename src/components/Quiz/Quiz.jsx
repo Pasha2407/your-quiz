@@ -8,6 +8,10 @@ export const Quiz = ({ name, quiz, amount }) => {
   const [message, setMessage] = useState("");
   const [finishQuiz, setFinishQuiz] = useState(false);
   const [result, setResult] = useState(0);
+  const [colorAnswer, setColorAnswer] = useState("");
+  const [active, setActive] = useState("");
+  console.log(active);
+
   const [resultData, setResultData] = useState(
     () => JSON.parse(localStorage.getItem("results")) ?? []
   );
@@ -25,10 +29,15 @@ export const Quiz = ({ name, quiz, amount }) => {
   };
 
   const clickAnswer = (id) => {
+    setActive(id);
     if (id === rightAnswerId) {
+      setColorAnswer("#52ff5d");
       setMessage("Чудово 😎");
       setResult(result + 1);
-    } else setMessage("Упс... 😔");
+    } else {
+      setMessage("Упс... 😔");
+      setColorAnswer("#ff7a7f");
+    }
   };
 
   let CurrentMinutes;
@@ -70,20 +79,19 @@ export const Quiz = ({ name, quiz, amount }) => {
           </i>
           <b>{quiz[activeQuestion].question}</b>
           <ul className={css.List}>
-            {quiz[activeQuestion].answers.map((item) =>
-              message === "" ? (
-                <li key={item.id} onClick={() => clickAnswer(item.id)}>
-                  {item.text}
-                </li>
-              ) : (
-                <li
-                  key={item.id}
-                  style={{ backgroundColor: item.color, cursor: "default" }}
-                >
-                  {item.text}
-                </li>
-              )
-            )}
+            {quiz[activeQuestion].answers.map((item) => (
+              <li
+                key={item.id}
+                style={{
+                  "--hover-cursor": !message && "pointer",
+                  backgroundColor: message && active === item.id && colorAnswer,
+                }}
+                className={!message ? css.HoverItem : ""}
+                onClick={() => !message && clickAnswer(item.id)}
+              >
+                {item.text}
+              </li>
+            ))}
           </ul>
           {message}
         </>

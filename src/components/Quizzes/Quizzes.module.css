@@ -7,21 +7,24 @@
     padding: 8px;
 }
 
-.Container>div>img {
+.Container>img {
     width: 100%;
     border-radius: 7px;
     vertical-align: bottom;
+    position: relative;
+    bottom: 40%;
 }
 
 .Description {
     position: relative;
     padding: 5px 15px;
     height: 40%;
-    bottom: 40%;
+    top: 60%;
+    z-index: 1;
     box-sizing: border-box;
     backdrop-filter: blur(4px);
     background: rgb(162, 180, 230);
-    background: linear-gradient(328deg, rgba(106, 128, 187, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
+    background: linear-gradient(0deg, rgba(106, 128, 187, 0.8) 10%, rgba(255, 255, 255, 0.6) 50%);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
 }

@@ -25,6 +25,23 @@
 
 .Item {
     margin: 15px 0;
-    background: rgb(162, 180, 230);
-    background: linear-gradient(328deg, rgba(106, 128, 187, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
+    background-color: rgb(207, 214, 233);
+}
+
+.Item>div {
+    margin-left: auto;
+}
+
+.Item>div>button {
+    padding: 5px 10px 4px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: white;
+    border: 2px solid #af4c4c;
+}
+
+.Item>div>button:hover {
+    background-color: #af4c4c;
+    color: white;
 }
