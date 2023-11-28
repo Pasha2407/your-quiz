@@ -7,29 +7,67 @@
     margin: 0;
 }
 
+.Container>div {
+    display: flex;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.Container>div>h2 {
+    margin: 0;
+}
+
+.Container>div>button {
+    padding: 10px 20px 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: white;
+    border: 2px solid rgb(73, 85, 117);
+}
+
+.Container>div>button:hover {
+    background-color: rgb(73, 85, 117);
+    color: white;
+}
+
 .ActiveItem,
 .Item {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    border: 3px solid rgb(73, 85, 117);
     border-radius: 20px;
     margin-top: 20px;
-    padding: 10px 30px;
+    padding: 0 5px;
 }
 
 .ActiveItem {
-    background-color: aquamarine;
     margin-bottom: 20px;
+    background-color: rgb(73, 85, 117);
+    color: white
+}
+
+.ActiveItem>section {
+    border-right: 1px solid black;
+    padding: 5px 10px 10px 10px;
+    text-align: center;
 }
 
 .Item {
     margin: 15px 0;
-    background-color: rgb(207, 214, 233);
+    background-color: rgba(73, 85, 117, 0.8);
+    color: white
+}
+
+.Item>section {
+    border-right: 1px solid black;
+    padding: 5px 10px 10px 10px;
+    text-align: center;
 }
 
 .Item>div {
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .Item>div>button {

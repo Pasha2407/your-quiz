@@ -193,8 +193,151 @@
         "id": "4",
         "image": "naruto.PNG",
         "name": "Наруто",
-        "amount": 0,
-        "background": "https://cdn.saske.tv/uploads/2019/06/poster.jpg"
+        "amount": 2,
+        "background": "https://cdn.saske.tv/uploads/2019/06/poster.jpg",
+        "quizEasy": [
+            {
+                "id": 1,
+                "question": "Фамілія Мінато",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Наміказе"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Узумакі"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Сенджу"
+                    }
+                ],
+                "rightAnswerId": 1
+            },
+            {
+                "id": 2,
+                "question": "Якими стихіями потрібно володіти для стихії дерева",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Земля"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Вода"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Вода + Вогонь"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Земля + Вода"
+                    }
+                ],
+                "rightAnswerId": 4
+            },
+            {
+                "id": 3,
+                "question": "Колір Сусано Ітачі",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Синій"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Червоний"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Зелений"
+                    }
+                ],
+                "rightAnswerId": 2
+            }
+        ],
+        "quizMiddle": [
+            {
+                "id": 1,
+                "question": "Расенган це",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Сенджуцу"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Нінджуцу"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Генджуцу"
+                    }
+                ],
+                "rightAnswerId": 2
+            },
+            {
+                "id": 2,
+                "question": "Як був запичатаний курама в мінато",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Печаттю як і в Наруто"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Печаттю клана Узумакі"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Печаттю Бога Смерті"
+                    }
+                ],
+                "rightAnswerId": 3
+            }
+        ],
+        "quizHard": [
+            {
+                "id": 1,
+                "question": "Хард1",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "1"
+                    },
+                    {
+                        "id": 2,
+                        "text": "2"
+                    },
+                    {
+                        "id": 3,
+                        "text": "3"
+                    }
+                ],
+                "rightAnswerId": 2
+            },
+            {
+                "id": 2,
+                "question": "Хард2",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "1"
+                    },
+                    {
+                        "id": 2,
+                        "text": "2"
+                    },
+                    {
+                        "id": 3,
+                        "text": "3"
+                    }
+                ],
+                "rightAnswerId": 3
+            }
+        ]
     },
     {
         "id": "5",

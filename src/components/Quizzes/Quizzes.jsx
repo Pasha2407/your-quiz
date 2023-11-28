@@ -2,7 +2,15 @@ import css from "./Quizzes.module.css";
 import { Modal } from "components/Modal/Modal";
 import { useState } from "react";
 
-export const Quizzes = ({ image, name, amount, quiz, background }) => {
+export const Quizzes = ({
+  image,
+  name,
+  amount,
+  quizEasy,
+  quizMiddle,
+  quizHard,
+  background,
+}) => {
   const [isModal, setIsModal] = useState(false);
 
   const openModal = () => {
@@ -30,7 +38,9 @@ export const Quizzes = ({ image, name, amount, quiz, background }) => {
           background={background}
           name={name}
           amount={amount}
-          quiz={quiz}
+          quizEasy={quizEasy}
+          quizMiddle={quizMiddle}
+          quizHard={quizHard}
           closeModal={closeModal}
         />
       )}

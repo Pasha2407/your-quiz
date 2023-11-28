@@ -1,7 +1,15 @@
 import css from "./Modal.module.css";
 import { Quiz } from "components/Quiz/Quiz";
 
-export const Modal = ({ background, name, amount, quiz, closeModal }) => {
+export const Modal = ({
+  background,
+  name,
+  amount,
+  quizEasy,
+  quizMiddle,
+  quizHard,
+  closeModal,
+}) => {
   return (
     <div className={css.Wrapper}>
       <div
@@ -18,8 +26,14 @@ export const Modal = ({ background, name, amount, quiz, closeModal }) => {
             <span>Вікторина по фільму</span>
             <h3>{name}</h3>
           </header>
-          {quiz ? (
-            <Quiz name={name} quiz={quiz} amount={amount} />
+          {quizEasy ? (
+            <Quiz
+              name={name}
+              quizEasy={quizEasy}
+              quizMiddle={quizMiddle}
+              quizHard={quizHard}
+              amount={amount}
+            />
           ) : (
             <i>Тест не готовий</i>
           )}

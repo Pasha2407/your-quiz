@@ -10,6 +10,48 @@
     padding: 10px 30px 20px 30px;
 }
 
+.Container>div {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.Container>div>button {
+    padding: 10px 20px 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: white;
+}
+
+.Container>div>button:hover {
+    color: white;
+}
+
+.EasyButton {
+    border: 2px solid #72e300;
+}
+
+.EasyButton:hover {
+    background-color: #72e300;
+}
+
+.MiddleButton {
+    border: 2px solid #fcaa1c;
+}
+
+.MiddleButton:hover {
+    background-color: #fcaa1c;
+}
+
+.HardButton {
+    border: 2px solid #990e0e;
+}
+
+.HardButton:hover {
+    background-color: #990e0e;
+}
+
 .List {
     padding-left: 0;
     list-style-type: none;

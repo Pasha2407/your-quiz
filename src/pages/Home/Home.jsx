@@ -13,7 +13,9 @@ export const Home = () => {
             image={item.image}
             name={item.name}
             amount={item.amount}
-            quiz={item.quiz}
+            quizEasy={item.quizEasy}
+            quizMiddle={item.quizMiddle}
+            quizHard={item.quizHard}
             background={item.background}
           />
         ))}
