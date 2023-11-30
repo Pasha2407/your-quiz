@@ -6,6 +6,7 @@ export const Quizzes = ({
   image,
   name,
   amount,
+  amountLevel,
   quizEasy,
   quizMiddle,
   quizHard,
@@ -25,7 +26,8 @@ export const Quizzes = ({
     <div className={css.Container}>
       <section className={css.Description}>
         <h4>{name}</h4>
-        <p>Кількість питань {amount}</p>
+        <p>Кількість всіх питань: {amount}</p>
+        <p>Вірнів складності: {amountLevel}</p>
         <div>
           <button onClick={openModal}>PLAY</button>
         </div>

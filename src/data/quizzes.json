@@ -3,7 +3,8 @@
         "id": "1",
         "image": "pirats.PNG",
         "name": "Пірати Карибського моря",
-        "amount": 3,
+        "amount": 0,
+        "amountLevel": 0,
         "background": "https://eneyida.tv/uploads/posts/2019-11/1575112865_18.jpg",
         "quiz": [
             {
@@ -68,43 +69,185 @@
     {
         "id": "2",
         "image": "harry-poter.PNG",
-        "name": "Гаррі Поттер",
-        "amount": 2,
+        "name": "Гарі Поттер",
+        "amount": 7,
+        "amountLevel": 3,
         "background": "https://content.rozetka.com.ua/goods/images/big/84296882.jpg",
-        "quiz": [
+        "quizEasy": [
             {
                 "id": 1,
-                "question": "Як звали директора Хогвартса",
+                "question": "Що це за істота",
+                "questionImage": "https://lithit.ru/wp-content/uploads/2022/02/dementory.jpg",
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Стів"
+                        "text": "Смертежер"
                     },
                     {
                         "id": 2,
-                        "text": "Елеван"
+                        "text": "Дементор"
                     },
                     {
                         "id": 3,
-                        "text": "Альбус"
+                        "text": "Дух смерті"
+                    }
+                ],
+                "rightAnswerId": 2
+            }
+        ],
+        "quizMiddle": [
+            {
+                "id": 1,
+                "question": "В кого Аластор перетворив Малфоя",
+                "questionImage": "https://pbs.twimg.com/media/A3KDXaSCUAAmw37.jpg",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Сову"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Жабу"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Скунса"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Тхора"
+                    }
+                ],
+                "rightAnswerId": 4
+            },
+            {
+                "id": 2,
+                "question": "Ким був для Гарі Сіріус Блек",
+                "questionImage": "https://i.pinimg.com/736x/26/52/97/265297344b13f0907a223de0d8950df5.jpg",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Батьком"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Вбивцев його батьків"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Далеким родичем"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Хрещеним батьком"
+                    },
+                    {
+                        "id": 5,
+                        "text": "Чужою людиною"
+                    }
+                ],
+                "rightAnswerId": 4
+            },
+            {
+                "id": 3,
+                "question": "Який патронус в Гарі Поттера",
+                "typeImage": true,
+                "answers": [
+                    {
+                        "id": 1,
+                        "image": "https://miro.medium.com/v2/resize:fit:525/1*01Ft_FaWW9TwD9zf6RAQ_w.png"
+                    },
+                    {
+                        "id": 2,
+                        "image": "https://images.squarespace-cdn.com/content/v1/53c47d21e4b06bf16949f6c2/1628038738364-TACXN3VW3FVSX5ZMPM6T/Owl1.jpg?format=700w"
+                    },
+                    {
+                        "id": 3,
+                        "image": "https://mortalreader.files.wordpress.com/2016/09/whats-your-patronus.jpg?w=452&h=300&crop=1"
+                    },
+                    {
+                        "id": 4,
+                        "image": "https://images.squarespace-cdn.com/content/v1/53c47d21e4b06bf16949f6c2/1628038932771-YMNCQ8NZYU0IOYGEYNF2/Panther.jpg?format=700w"
                     }
                 ],
                 "rightAnswerId": 3
             },
             {
-                "id": 2,
-                "question": "Фамілія Гаррі",
+                "id": 4,
+                "question": "Хто вбив Седріка Діггорі",
+                "questionImage": "https://assets.puzzlefactory.com/puzzle/369/720/original.webp",
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Потер"
+                        "text": "Аластор Грім"
                     },
                     {
                         "id": 2,
-                        "text": "Рузвальд"
+                        "text": "Пітер Петігрю"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Луціус Малфой"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Волондеморт"
+                    }
+                ],
+                "rightAnswerId": 2
+            }
+        ],
+        "quizHard": [
+            {
+                "id": 1,
+                "question": "Хто вбив змію Волондеморта",
+                "typeImage": true,
+                "answers": [
+                    {
+                        "id": 1,
+                        "image": "https://www.youloveit.ru/uploads/gallery/main/553/neville-promo-pics-neville-longbottom.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Ron_Weasley_poster.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "image": "https://news.store.rambler.ru/img/0d024f7e0a05350ca36a472ce109d70d?img-format=auto&img-1-resize=height:400,fit:max&img-2-filter=sharpen"
+                    },
+                    {
+                        "id": 4,
+                        "image": "https://avatars.mds.yandex.net/get-kinopoisk-post-img/2381555/d269b17090f2c098d258d315bba453f9/960x540"
                     }
                 ],
                 "rightAnswerId": 1
+            },
+            {
+                "id": 2,
+                "question": "Яка найсильніша паличка в світі",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Паличка Перо Фенікса"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Кленова Паличка"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Бузинова Паличка"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Паличка з жил Дракона"
+                    },
+                    {
+                        "id": 5,
+                        "text": "Паличка Слоняча Кістка"
+                    }
+                ],
+                "rightAnswerId": 3
             }
         ]
     },
@@ -112,7 +255,8 @@
         "id": "3",
         "image": "avengers.PNG",
         "name": "Месники",
-        "amount": 4,
+        "amount": 0,
+        "amountLevel": 0,
         "background": "https://i.ytimg.com/vi/5PxaT3k8UI8/maxresdefault.jpg",
         "quiz": [
             {
@@ -193,12 +337,14 @@
         "id": "4",
         "image": "naruto.PNG",
         "name": "Наруто",
-        "amount": 2,
+        "amount": 5,
+        "amountLevel": 2,
         "background": "https://cdn.saske.tv/uploads/2019/06/poster.jpg",
         "quizEasy": [
             {
                 "id": 1,
                 "question": "Фамілія Мінато",
+                "questionImage": "https://pm1.aminoapps.com/7186/eb7a02caea643cdcc7f033d67c1ba5885aabd267r1-1920-1078v2_uhq.jpg",
                 "answers": [
                     {
                         "id": 1,
@@ -241,6 +387,7 @@
             {
                 "id": 3,
                 "question": "Колір Сусано Ітачі",
+                "questionImage": "https://kartinki.pics/uploads/posts/2021-07/1625706224_54-kartinkin-com-p-itachi-susano-art-art-krasivo-57.png",
                 "answers": [
                     {
                         "id": 1,
@@ -281,58 +428,23 @@
             {
                 "id": 2,
                 "question": "Як був запичатаний курама в мінато",
+                "typeImage": true,
                 "answers": [
                     {
                         "id": 1,
-                        "text": "Печаттю як і в Наруто"
+                        "image": "https://pm1.aminoapps.com/6575/0e44c881fb8495914bee143c6957238bbeb2e59f_hq.jpg"
                     },
                     {
                         "id": 2,
-                        "text": "Печаттю клана Узумакі"
+                        "image": "https://cdn.idntimes.com/content-images/duniaku/post/20200329/mito-uzumaki-0-96ab27b52b3c1b3b44712f2c977273d6.jpg"
                     },
                     {
                         "id": 3,
-                        "text": "Печаттю Бога Смерті"
-                    }
-                ],
-                "rightAnswerId": 3
-            }
-        ],
-        "quizHard": [
-            {
-                "id": 1,
-                "question": "Хард1",
-                "answers": [
-                    {
-                        "id": 1,
-                        "text": "1"
+                        "image": "https://gen.jut.su/uploads/posts/2014-06/1403227000_snyatie-pechati-boga-smerti_000000.jpeg"
                     },
                     {
-                        "id": 2,
-                        "text": "2"
-                    },
-                    {
-                        "id": 3,
-                        "text": "3"
-                    }
-                ],
-                "rightAnswerId": 2
-            },
-            {
-                "id": 2,
-                "question": "Хард2",
-                "answers": [
-                    {
-                        "id": 1,
-                        "text": "1"
-                    },
-                    {
-                        "id": 2,
-                        "text": "2"
-                    },
-                    {
-                        "id": 3,
-                        "text": "3"
+                        "id": 4,
+                        "image": "https://lh6.googleusercontent.com/r0oXHLj6zVYh_tqIEWCCgY6fYQFMzAFR3YMAf78o2eUNKzmSiRyhOTp9y5LZJykGaxEhZ_cqwOMqLYWz1f1-QfQ-D9U42tz545czw3zutikBQueLFEw_o16m6C74UCqVIOhgtewJvJ1ldfMTAo94aXA"
                     }
                 ],
                 "rightAnswerId": 3
@@ -344,6 +456,7 @@
         "image": "game-of-thrones.PNG",
         "name": "Ігра Престолів",
         "amount": 0,
+        "amountLevel": 0,
         "background": "https://lifeimg.pravda.com/images/doc/6/3/63a8973-s8-trailer-1920.jpg"
     }
 ]

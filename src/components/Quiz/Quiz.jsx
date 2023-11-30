@@ -19,7 +19,7 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const startEasy = () => {
     setQuizLevel(quizEasy);
     setStartQuiz(true);
-    setResultColor("5px solid #72e300");
+    setResultColor("5px solid #78e6fa");
     setLevelName("Глядач");
     setStartTime(new Date().getMinutes() * 60 + new Date().getSeconds());
   };
@@ -27,7 +27,7 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const startMiddle = () => {
     setQuizLevel(quizMiddle);
     setStartQuiz(true);
-    setResultColor("5px solid #fcaa1c");
+    setResultColor("5px solid #7896fa");
     setLevelName("Знавець");
     setStartTime(new Date().getMinutes() * 60 + new Date().getSeconds());
   };
@@ -35,7 +35,7 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const startHard = () => {
     setQuizLevel(quizHard);
     setStartQuiz(true);
-    setResultColor("5px solid #990e0e");
+    setResultColor("5px solid #9564de");
     setLevelName("Експерт");
     setStartTime(new Date().getMinutes() * 60 + new Date().getSeconds());
   };
@@ -52,8 +52,8 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   }, [resultData]);
 
   const nextQuestion = () => {
-    setActiveQuestion(activeQuestion + 1);
     setMessage("");
+    setActiveQuestion(activeQuestion + 1);
   };
 
   const clickAnswer = (id) => {
@@ -130,10 +130,8 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   return (
     <section className={css.Container}>
       {!startQuiz && (
-        <>
-          <div>
-            <span>Виберіть рівень складності</span>
-          </div>
+        <div className={css.Level}>
+          <span>Виберіть рівень складності</span>
           <div>
             <button className={css.EasyButton} onClick={startEasy}>
               Глядач
@@ -145,7 +143,7 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
               Експерт
             </button>
           </div>
-        </>
+        </div>
       )}
       {!finishQuiz && startQuiz && (
         <>
@@ -153,21 +151,51 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
             Питання {activeQuestion + 1} з {quizLevel.length}
           </i>
           <b>{quizLevel[activeQuestion].question}</b>
-          <ul className={css.List}>
-            {quizLevel[activeQuestion].answers.map((item) => (
-              <li
-                key={item.id}
-                style={{
-                  "--hover-cursor": !message && "pointer",
-                  backgroundColor: message && active === item.id && colorAnswer,
-                }}
-                className={!message ? css.HoverItem : ""}
-                onClick={() => !message && clickAnswer(item.id)}
-              >
-                {item.text}
-              </li>
-            ))}
-          </ul>
+          {quizLevel[activeQuestion].questionImage && (
+            <div className={css.QuestionImage}>
+              <img
+                src={quizLevel[activeQuestion].questionImage}
+                alt="Картинка не загрузилась"
+              ></img>
+            </div>
+          )}
+          {quizLevel[activeQuestion].typeImage ? (
+            <ul className={css.ListImage}>
+              {quizLevel[activeQuestion].answers.map((item) => (
+                <li
+                  key={item.id}
+                  style={{
+                    "--hover-cursor": !message && "pointer",
+                    border:
+                      message &&
+                      active === item.id &&
+                      `solid 3px ${colorAnswer}`,
+                  }}
+                  className={!message ? css.HoverItemImage : ""}
+                  onClick={() => !message && clickAnswer(item.id)}
+                >
+                  <img src={item.image} alt="Картинка не загрузилась"></img>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <ul className={css.List}>
+              {quizLevel[activeQuestion].answers.map((item) => (
+                <li
+                  key={item.id}
+                  style={{
+                    "--hover-cursor": !message && "pointer",
+                    backgroundColor:
+                      message && active === item.id && colorAnswer,
+                  }}
+                  className={!message ? css.HoverItem : ""}
+                  onClick={() => !message && clickAnswer(item.id)}
+                >
+                  {item.text}
+                </li>
+              ))}
+            </ul>
+          )}
           {message}
         </>
       )}
@@ -187,7 +215,7 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
       {finishQuiz && (
         <div>
           <span>
-            Вітаю🥳 ти пройшов вікторину по фільму {name}, настав час побачити
+            Вітаю🥳 вікторина по фільму {name} пройдена, настав час побачити
             свій результат
           </span>
           <div className={css.Link}>

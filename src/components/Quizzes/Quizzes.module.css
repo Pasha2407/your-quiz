@@ -12,14 +12,14 @@
     border-radius: 7px;
     vertical-align: bottom;
     position: relative;
-    bottom: 40%;
+    bottom: 45%;
 }
 
 .Description {
     position: relative;
     padding: 5px 15px;
-    height: 40%;
-    top: 60%;
+    height: 45%;
+    top: 55%;
     z-index: 1;
     box-sizing: border-box;
     backdrop-filter: blur(4px);
@@ -33,6 +33,10 @@
 p {
     margin: 0;
     margin-bottom: 5px;
+}
+
+.Description>p {
+    font-size: 15px;
 }
 
 .Description>div {

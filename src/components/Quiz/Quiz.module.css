@@ -10,13 +10,19 @@
     padding: 10px 30px 20px 30px;
 }
 
-.Container>div {
+.Level {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.Container>div>button {
+.Level>div {
+    display: flex;
+    gap: 40px;
+}
+
+.Level>div>button {
     padding: 10px 20px 8px 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -24,32 +30,67 @@
     background-color: white;
 }
 
-.Container>div>button:hover {
+.Level>div>button:hover {
     color: white;
 }
 
 .EasyButton {
-    border: 2px solid #72e300;
+    border: 2px solid #78e6fa;
 }
 
 .EasyButton:hover {
-    background-color: #72e300;
+    background-color: #78e6fa;
 }
 
 .MiddleButton {
-    border: 2px solid #fcaa1c;
+    border: 2px solid #7896fa;
 }
 
 .MiddleButton:hover {
-    background-color: #fcaa1c;
+    background-color: #7896fa;
 }
 
 .HardButton {
-    border: 2px solid #990e0e;
+    border: 2px solid #9564de;
 }
 
 .HardButton:hover {
-    background-color: #990e0e;
+    background-color: #9564de;
+}
+
+.QuestionImage {
+    width: 250px;
+    height: 150px;
+    margin: 0 auto;
+    border: 3px solid rgb(73, 85, 117);
+}
+
+.QuestionImage>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ListImage {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.ListImage>li {
+    width: 150px;
+    height: 120px;
+    border: 3px solid rgb(73, 85, 117);
+}
+
+.ListImage>li>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .List {
@@ -67,16 +108,22 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.List>li:hover {
+.List>li:hover,
+.ListImage>li:hover {
     cursor: var(--hover-cursor) !important;
 }
 
-.HoverItem {
+.HoverItem,
+.HoverItemImage {
     transition-duration: 0.3s;
 }
 
 .HoverItem:hover {
     background-color: aquamarine;
+}
+
+.HoverItemImage:hover {
+    transform: scale(1.1);
 }
 
 .Next,

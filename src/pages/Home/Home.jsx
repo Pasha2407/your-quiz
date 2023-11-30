@@ -13,6 +13,7 @@ export const Home = () => {
             image={item.image}
             name={item.name}
             amount={item.amount}
+            amountLevel={item.amountLevel}
             quizEasy={item.quizEasy}
             quizMiddle={item.quizMiddle}
             quizHard={item.quizHard}
