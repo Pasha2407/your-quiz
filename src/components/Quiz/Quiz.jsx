@@ -15,11 +15,13 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const [startQuiz, setStartQuiz] = useState(false);
   const [levelName, setLevelName] = useState("");
   const [startTime, setStartTime] = useState(0);
+  const [multiplier, setMultiplier] = useState(1);
+  const [points, setPoints] = useState(0);
 
   const startEasy = () => {
     setQuizLevel(quizEasy);
     setStartQuiz(true);
-    setResultColor("5px solid #78e6fa");
+    setResultColor("5px solid #5afa9a");
     setLevelName("Глядач");
     setStartTime(new Date().getMinutes() * 60 + new Date().getSeconds());
   };
@@ -27,7 +29,7 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const startMiddle = () => {
     setQuizLevel(quizMiddle);
     setStartQuiz(true);
-    setResultColor("5px solid #7896fa");
+    setResultColor("5px solid #facf5a");
     setLevelName("Знавець");
     setStartTime(new Date().getMinutes() * 60 + new Date().getSeconds());
   };
@@ -35,7 +37,7 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const startHard = () => {
     setQuizLevel(quizHard);
     setStartQuiz(true);
-    setResultColor("5px solid #9564de");
+    setResultColor("5px solid #fa6b6b");
     setLevelName("Експерт");
     setStartTime(new Date().getMinutes() * 60 + new Date().getSeconds());
   };
@@ -54,6 +56,8 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const nextQuestion = () => {
     setMessage("");
     setActiveQuestion(activeQuestion + 1);
+    console.log(result);
+    console.log(multiplier);
   };
 
   const clickAnswer = (id) => {
@@ -62,9 +66,12 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
       setColorAnswer("#52ff5d");
       setMessage("Чудово 😎");
       setResult(result + 1);
+      setMultiplier(multiplier + 0.25);
+      setPoints(points + multiplier * 5000);
     } else {
       setMessage("Упс... 😔");
       setColorAnswer("#ff7a7f");
+      setMultiplier(1);
     }
   };
 
@@ -78,18 +85,19 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   else time = stopTime - startTime;
 
   const avgTime = Math.round(time / quizLevel.length);
-  const countFalse = quizLevel.length - result;
 
-  let fall = 0;
-  if (countFalse > 0 && countFalse < 4) fall = 5;
-  else if (countFalse >= 4 && countFalse < 6) fall = 10;
-  else if (countFalse >= 6 && countFalse < 10) fall = 15;
+  let timeBonus;
+  if (avgTime <= 5) timeBonus = 1.25;
+  else if (avgTime === 6) timeBonus = 1.2;
+  else if (avgTime === 7) timeBonus = 1.15;
+  else if (avgTime === 8) timeBonus = 1.1;
+  else if (avgTime === 9) timeBonus = 1.05;
+  else if (avgTime >= 10) timeBonus = 1;
 
-  let timeFall = avgTime - 7;
-  if (timeFall > 15) timeFall = 15;
-  else if (timeFall <= 0) timeFall = 0;
+  let suborder = (multiplier - 1) / 0.25;
+  if (suborder < 1) suborder = 1;
 
-  const points = 100 - countFalse * fall - timeFall;
+  const finalPoints = Math.round((points / quizLevel.length) * timeBonus);
 
   let CurrentMinutes;
   if (new Date().getMinutes() < 10) {
@@ -114,8 +122,9 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
     amount: quizLevel.length,
     time: time,
     avgTime: avgTime,
+    suborder: suborder,
     result: result,
-    points: points,
+    points: finalPoints,
   };
 
   const clickFinish = () => {
@@ -127,6 +136,15 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
     setResultData([...resultData, finalResultData]);
   };
 
+  const onSelectLevel = !finishQuiz && startQuiz;
+  const quiz = quizLevel[activeQuestion];
+  const onListStyle = !message ? css.HoverItem : "";
+  const onListImageStyle = !message ? css.HoverItemImage : "";
+  const onNextButton =
+    quizLevel && message && activeQuestion < quizLevel.length - 1;
+  const onFinishButton =
+    !finishQuiz && message && activeQuestion >= quizLevel.length - 1;
+
   return (
     <section className={css.Container}>
       {!startQuiz && (
@@ -136,77 +154,67 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
             <button className={css.EasyButton} onClick={startEasy}>
               Глядач
             </button>
-            <button className={css.MiddleButton} onClick={startMiddle}>
+            <button
+              disabled={!quizMiddle}
+              className={css.MiddleButton}
+              onClick={startMiddle}
+            >
               Знавець
             </button>
-            <button className={css.HardButton} onClick={startHard}>
-              Експерт
-            </button>
+            {quizHard && (
+              <button className={css.HardButton} onClick={startHard}>
+                Експерт
+              </button>
+            )}
           </div>
         </div>
       )}
-      {!finishQuiz && startQuiz && (
+
+      {onSelectLevel && (
         <>
           <i>
             Питання {activeQuestion + 1} з {quizLevel.length}
           </i>
-          <b>{quizLevel[activeQuestion].question}</b>
-          {quizLevel[activeQuestion].questionImage && (
+          <b>{quiz.question}</b>
+          {quiz.questionImage && (
             <div className={css.QuestionImage}>
-              <img
-                src={quizLevel[activeQuestion].questionImage}
-                alt="Картинка не загрузилась"
-              ></img>
+              <img src={quiz.questionImage} alt="Картинка не загрузилась"></img>
             </div>
           )}
-          {quizLevel[activeQuestion].typeImage ? (
-            <ul className={css.ListImage}>
-              {quizLevel[activeQuestion].answers.map((item) => (
-                <li
-                  key={item.id}
-                  style={{
-                    "--hover-cursor": !message && "pointer",
-                    border:
-                      message &&
-                      active === item.id &&
-                      `solid 3px ${colorAnswer}`,
-                  }}
-                  className={!message ? css.HoverItemImage : ""}
-                  onClick={() => !message && clickAnswer(item.id)}
-                >
+          <ul className={quiz.typeImage ? css.ListImage : css.List}>
+            {quiz.answers.map((item) => (
+              <li
+                key={item.id}
+                style={{
+                  border:
+                    item.image &&
+                    message &&
+                    active === item.id &&
+                    `solid 3px ${colorAnswer}`,
+                  backgroundColor:
+                    item.text && message && active === item.id && colorAnswer,
+                }}
+                className={item.text ? onListStyle : onListImageStyle}
+                onClick={() => !message && clickAnswer(item.id)}
+              >
+                {item.text && item.text}
+                {item.image && (
                   <img src={item.image} alt="Картинка не загрузилась"></img>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <ul className={css.List}>
-              {quizLevel[activeQuestion].answers.map((item) => (
-                <li
-                  key={item.id}
-                  style={{
-                    "--hover-cursor": !message && "pointer",
-                    backgroundColor:
-                      message && active === item.id && colorAnswer,
-                  }}
-                  className={!message ? css.HoverItem : ""}
-                  onClick={() => !message && clickAnswer(item.id)}
-                >
-                  {item.text}
-                </li>
-              ))}
-            </ul>
-          )}
+                )}
+              </li>
+            ))}
+          </ul>
           {message}
         </>
       )}
 
-      {quizLevel && message && activeQuestion < quizLevel.length - 1 && (
+      {onNextButton && (
         <div className={css.Next}>
           <button onClick={nextQuestion}>NEXT</button>
         </div>
       )}
 
-      {!finishQuiz && message && activeQuestion >= quizLevel.length - 1 && (
+      {onFinishButton && (
         <div className={css.Finish}>
           <button onClick={clickFinish}>FINISH</button>
         </div>
@@ -226,3 +234,5 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
     </section>
   );
 };
+
+//

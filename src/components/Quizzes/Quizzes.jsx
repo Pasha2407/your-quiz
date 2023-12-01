@@ -11,6 +11,7 @@ export const Quizzes = ({
   quizMiddle,
   quizHard,
   background,
+  audio,
 }) => {
   const [isModal, setIsModal] = useState(false);
 
@@ -27,7 +28,7 @@ export const Quizzes = ({
       <section className={css.Description}>
         <h4>{name}</h4>
         <p>Кількість всіх питань: {amount}</p>
-        <p>Вірнів складності: {amountLevel}</p>
+        <p>Рівнів складності: {amountLevel}</p>
         <div>
           <button onClick={openModal}>PLAY</button>
         </div>
@@ -37,6 +38,7 @@ export const Quizzes = ({
 
       {isModal && (
         <Modal
+          audio={audio}
           background={background}
           name={name}
           amount={amount}

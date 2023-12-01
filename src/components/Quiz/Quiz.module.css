@@ -27,35 +27,32 @@
     border-radius: 10px;
     cursor: pointer;
     transition-duration: 0.3s;
-    background-color: white;
-}
-
-.Level>div>button:hover {
-    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
 }
 
 .EasyButton {
-    border: 2px solid #78e6fa;
+    border: 3px solid #5afa9a;
 }
 
 .EasyButton:hover {
-    background-color: #78e6fa;
+    background-color: #5afa9a;
 }
 
 .MiddleButton {
-    border: 2px solid #7896fa;
+    border: 3px solid #facf5a;
 }
 
 .MiddleButton:hover {
-    background-color: #7896fa;
+    background-color: #facf5a;
 }
 
 .HardButton {
-    border: 2px solid #9564de;
+    border: 3px solid #fa6b6b;
 }
 
 .HardButton:hover {
-    background-color: #9564de;
+    background-color: #fa6b6b;
 }
 
 .QuestionImage {
@@ -90,7 +87,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .List {
@@ -108,22 +104,20 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.List>li:hover,
-.ListImage>li:hover {
-    cursor: var(--hover-cursor) !important;
-}
-
-.HoverItem,
-.HoverItemImage {
+.HoverItem {
     transition-duration: 0.3s;
 }
 
 .HoverItem:hover {
     background-color: aquamarine;
+    cursor: pointer;
 }
 
 .HoverItemImage:hover {
     transform: scale(1.1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
 }
 
 .Next,

@@ -18,6 +18,7 @@ export const Home = () => {
             quizMiddle={item.quizMiddle}
             quizHard={item.quizHard}
             background={item.background}
+            audio={item.audio}
           />
         ))}
       </ul>

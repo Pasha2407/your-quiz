@@ -1,5 +1,5 @@
 .Container {
-    padding: 10px 50px;
+    padding: 10px 30px;
     margin: 0;
 }
 
@@ -37,31 +37,37 @@
     flex-direction: row;
     border-radius: 20px;
     margin-top: 20px;
-    padding: 0 5px;
+    padding: 0 10px 0 5px;
+    color: white
 }
 
 .ActiveItem {
     margin-bottom: 20px;
     background-color: rgb(73, 85, 117);
-    color: white
+
 }
 
-.ActiveItem>section {
+.ActiveItem>section,
+.Item>section {
     border-right: 1px solid black;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 5px 10px 5px;
     text-align: center;
+}
+
+.ActiveItem>section>p,
+.Item>section>p {
+    font-size: 14px;
+    margin: 0 10px 5px 10px;
+}
+
+.ActiveItem>section>p,
+.Item>section>b {
+    font-size: 14px;
 }
 
 .Item {
     margin: 15px 0;
     background-color: rgba(73, 85, 117, 0.8);
-    color: white
-}
-
-.Item>section {
-    border-right: 1px solid black;
-    padding: 5px 10px 10px 10px;
-    text-align: center;
 }
 
 .Item>div {

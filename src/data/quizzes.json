@@ -6,6 +6,7 @@
         "amount": 0,
         "amountLevel": 0,
         "background": "https://eneyida.tv/uploads/posts/2019-11/1575112865_18.jpg",
+        "audio": "pirats.mp3",
         "quiz": [
             {
                 "id": 1,
@@ -73,6 +74,7 @@
         "amount": 7,
         "amountLevel": 3,
         "background": "https://content.rozetka.com.ua/goods/images/big/84296882.jpg",
+        "audio": "harry-potter.mp3",
         "quizEasy": [
             {
                 "id": 1,
@@ -258,6 +260,7 @@
         "amount": 0,
         "amountLevel": 0,
         "background": "https://i.ytimg.com/vi/5PxaT3k8UI8/maxresdefault.jpg",
+        "audio": "avengers.mp3",
         "quiz": [
             {
                 "id": 1,
@@ -340,6 +343,7 @@
         "amount": 5,
         "amountLevel": 2,
         "background": "https://cdn.saske.tv/uploads/2019/06/poster.jpg",
+        "audio": "naruto1.mp3",
         "quizEasy": [
             {
                 "id": 1,
@@ -457,6 +461,7 @@
         "name": "Ігра Престолів",
         "amount": 0,
         "amountLevel": 0,
-        "background": "https://lifeimg.pravda.com/images/doc/6/3/63a8973-s8-trailer-1920.jpg"
+        "background": "https://lifeimg.pravda.com/images/doc/6/3/63a8973-s8-trailer-1920.jpg",
+        "audio": "game-of-thrones.mp3"
     }
 ]

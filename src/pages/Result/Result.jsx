@@ -49,6 +49,10 @@ export const Result = () => {
               <b>{result.avgTime} сек</b>
             </section>
             <section>
+              <p>Макс підряд правильно</p>
+              <b>{result.suborder}</b>
+            </section>
+            <section>
               <p>Результат</p>
               <b>
                 Правильно {result.result} з {result.amount}
@@ -106,6 +110,10 @@ export const Result = () => {
               <section>
                 <p>Середній час на запитання</p>
                 <b>{item.avgTime} сек</b>
+              </section>
+              <section>
+                <p>Макс підряд правильно</p>
+                <b>{item.suborder}</b>
               </section>
               <section>
                 <p>Результат</p>

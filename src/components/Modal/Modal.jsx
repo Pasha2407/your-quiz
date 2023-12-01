@@ -3,6 +3,7 @@ import { Quiz } from "components/Quiz/Quiz";
 
 export const Modal = ({
   background,
+  audio,
   name,
   amount,
   quizEasy,
@@ -23,8 +24,11 @@ export const Modal = ({
             <button onClick={closeModal}>EXIT</button>
           </div>
           <header>
-            <span>Вікторина по фільму</span>
+            <span>Вікторина</span>
             <h3>{name}</h3>
+            <audio style={{ opacity: 0.5 }} controls autoPlay loop>
+              <source src={require(`data/audio/${audio}`)} />
+            </audio>
           </header>
           {quizEasy ? (
             <Quiz
