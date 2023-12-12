@@ -342,8 +342,8 @@
         "name": "Наруто",
         "amount": 5,
         "amountLevel": 2,
-        "background": "https://cdn.saske.tv/uploads/2019/06/poster.jpg",
-        "audio": "naruto1.mp3",
+        "background": "https://rare-gallery.com/thumbs/320083-Naruto-Sasuke-4K.jpg",
+        "audio": "naruto.mp3",
         "quizEasy": [
             {
                 "id": 1,
@@ -367,51 +367,6 @@
             },
             {
                 "id": 2,
-                "question": "Якими стихіями потрібно володіти для стихії дерева",
-                "answers": [
-                    {
-                        "id": 1,
-                        "text": "Земля"
-                    },
-                    {
-                        "id": 2,
-                        "text": "Вода"
-                    },
-                    {
-                        "id": 3,
-                        "text": "Вода + Вогонь"
-                    },
-                    {
-                        "id": 4,
-                        "text": "Земля + Вода"
-                    }
-                ],
-                "rightAnswerId": 4
-            },
-            {
-                "id": 3,
-                "question": "Колір Сусано Ітачі",
-                "questionImage": "https://kartinki.pics/uploads/posts/2021-07/1625706224_54-kartinkin-com-p-itachi-susano-art-art-krasivo-57.png",
-                "answers": [
-                    {
-                        "id": 1,
-                        "text": "Синій"
-                    },
-                    {
-                        "id": 2,
-                        "text": "Червоний"
-                    },
-                    {
-                        "id": 3,
-                        "text": "Зелений"
-                    }
-                ],
-                "rightAnswerId": 2
-            }
-        ],
-        "quizMiddle": [
-            {
-                "id": 1,
                 "question": "Расенган це",
                 "answers": [
                     {
@@ -428,30 +383,32 @@
                     }
                 ],
                 "rightAnswerId": 2
-            },
+            }
+        ],
+        "quizMiddle": [
             {
                 "id": 2,
-                "question": "Як був запичатаний курама в мінато",
+                "question": "Як виглядає меч Тоцука",
                 "typeImage": true,
                 "answers": [
                     {
                         "id": 1,
-                        "image": "https://pm1.aminoapps.com/6575/0e44c881fb8495914bee143c6957238bbeb2e59f_hq.jpg"
+                        "image": "https://qph.cf2.quoracdn.net/main-qimg-f4c4a2bdffdcd5386420182324eb2a0e-pjlq"
                     },
                     {
                         "id": 2,
-                        "image": "https://cdn.idntimes.com/content-images/duniaku/post/20200329/mito-uzumaki-0-96ab27b52b3c1b3b44712f2c977273d6.jpg"
+                        "image": "https://sm.ign.com/ign_br/screenshot/default/espada-totsuka_3fc8.png"
                     },
                     {
                         "id": 3,
-                        "image": "https://gen.jut.su/uploads/posts/2014-06/1403227000_snyatie-pechati-boga-smerti_000000.jpeg"
+                        "image": "https://e1.pxfuel.com/desktop-wallpaper/329/328/desktop-wallpaper-uchiha-madara-perfect-susanoo-by-susanoomadara-madara-susanoo.jpg"
                     },
                     {
                         "id": 4,
-                        "image": "https://lh6.googleusercontent.com/r0oXHLj6zVYh_tqIEWCCgY6fYQFMzAFR3YMAf78o2eUNKzmSiRyhOTp9y5LZJykGaxEhZ_cqwOMqLYWz1f1-QfQ-D9U42tz545czw3zutikBQueLFEw_o16m6C74UCqVIOhgtewJvJ1ldfMTAo94aXA"
+                        "image": "https://imgix.ranker.com/list_img_v2/224/2900224/original/2900224?auto=format&q=50&fit=crop&fm=pjpg&dpr=2&crop=faces&h=185.86387434554973&w=355"
                     }
                 ],
-                "rightAnswerId": 3
+                "rightAnswerId": 2
             }
         ]
     },

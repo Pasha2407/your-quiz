@@ -87,11 +87,11 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const avgTime = Math.round(time / quizLevel.length);
 
   let timeBonus;
-  if (avgTime <= 5) timeBonus = 1.25;
-  else if (avgTime === 6) timeBonus = 1.2;
-  else if (avgTime === 7) timeBonus = 1.15;
-  else if (avgTime === 8) timeBonus = 1.1;
-  else if (avgTime === 9) timeBonus = 1.05;
+  if (avgTime <= 5) timeBonus = 1.1;
+  else if (avgTime === 6) timeBonus = 1.08;
+  else if (avgTime === 7) timeBonus = 1.06;
+  else if (avgTime === 8) timeBonus = 1.04;
+  else if (avgTime === 9) timeBonus = 1.02;
   else if (avgTime >= 10) timeBonus = 1;
 
   let suborder = (multiplier - 1) / 0.25;
@@ -234,5 +234,3 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
     </section>
   );
 };
-
-//
