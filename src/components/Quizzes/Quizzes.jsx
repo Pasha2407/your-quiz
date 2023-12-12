@@ -10,7 +10,6 @@ export const Quizzes = ({
   quizEasy,
   quizMiddle,
   quizHard,
-  background,
   audio,
 }) => {
   const [isModal, setIsModal] = useState(false);
@@ -34,12 +33,12 @@ export const Quizzes = ({
         </div>
       </section>
 
-      <img src={require(`data/images/${image}`)} alt=""></img>
+      <img src={require(`data/images/${image}/title.PNG`)} alt=""></img>
 
       {isModal && (
         <Modal
+          image={image}
           audio={audio}
-          background={background}
           name={name}
           amount={amount}
           quizEasy={quizEasy}

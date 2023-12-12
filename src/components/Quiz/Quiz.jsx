@@ -175,13 +175,16 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
           <i>
             Питання {activeQuestion + 1} з {quizLevel.length}
           </i>
-          <b>{quiz.question}</b>
+          <b>{quiz.question ? quiz.question : quiz.questionForImage}</b>
           {quiz.questionImage && (
             <div className={css.QuestionImage}>
-              <img src={quiz.questionImage} alt="Картинка не загрузилась"></img>
+              <img
+                src={require(`data/images/${quiz.questionImage}`)}
+                alt="Картинка не загрузилась"
+              ></img>
             </div>
           )}
-          <ul className={quiz.typeImage ? css.ListImage : css.List}>
+          <ul className={quiz.questionForImage ? css.ListImage : css.List}>
             {quiz.answers.map((item) => (
               <li
                 key={item.id}
@@ -199,7 +202,10 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
               >
                 {item.text && item.text}
                 {item.image && (
-                  <img src={item.image} alt="Картинка не загрузилась"></img>
+                  <img
+                    src={require(`data/images/${item.image}`)}
+                    alt="Картинка не загрузилась"
+                  ></img>
                 )}
               </li>
             ))}

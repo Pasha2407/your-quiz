@@ -17,7 +17,6 @@ export const Home = () => {
             quizEasy={item.quizEasy}
             quizMiddle={item.quizMiddle}
             quizHard={item.quizHard}
-            background={item.background}
             audio={item.audio}
           />
         ))}

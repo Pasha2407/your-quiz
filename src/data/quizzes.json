@@ -1,11 +1,10 @@
 [
     {
         "id": "1",
-        "image": "pirats.PNG",
+        "image": "pirats",
         "name": "Пірати Карибського моря",
         "amount": 0,
         "amountLevel": 0,
-        "background": "https://eneyida.tv/uploads/posts/2019-11/1575112865_18.jpg",
         "audio": "pirats.mp3",
         "quiz": [
             {
@@ -69,17 +68,16 @@
     },
     {
         "id": "2",
-        "image": "harry-poter.PNG",
+        "image": "harry-potter",
         "name": "Гарі Поттер",
         "amount": 7,
         "amountLevel": 3,
-        "background": "https://content.rozetka.com.ua/goods/images/big/84296882.jpg",
         "audio": "harry-potter.mp3",
         "quizEasy": [
             {
                 "id": 1,
                 "question": "Що це за істота",
-                "questionImage": "https://lithit.ru/wp-content/uploads/2022/02/dementory.jpg",
+                "questionImage": "harry-potter/easy/1.PNG",
                 "answers": [
                     {
                         "id": 1,
@@ -101,7 +99,7 @@
             {
                 "id": 1,
                 "question": "В кого Аластор перетворив Малфоя",
-                "questionImage": "https://pbs.twimg.com/media/A3KDXaSCUAAmw37.jpg",
+                "questionImage": "harry-potter/middle/1.PNG",
                 "answers": [
                     {
                         "id": 1,
@@ -125,7 +123,7 @@
             {
                 "id": 2,
                 "question": "Ким був для Гарі Сіріус Блек",
-                "questionImage": "https://i.pinimg.com/736x/26/52/97/265297344b13f0907a223de0d8950df5.jpg",
+                "questionImage": "harry-potter/middle/2.PNG",
                 "answers": [
                     {
                         "id": 1,
@@ -152,24 +150,23 @@
             },
             {
                 "id": 3,
-                "question": "Який патронус в Гарі Поттера",
-                "typeImage": true,
+                "questionForImage": "Який патронус в Гарі Поттера",
                 "answers": [
                     {
                         "id": 1,
-                        "image": "https://miro.medium.com/v2/resize:fit:525/1*01Ft_FaWW9TwD9zf6RAQ_w.png"
+                        "image": "harry-potter/middle/3.1.PNG"
                     },
                     {
                         "id": 2,
-                        "image": "https://images.squarespace-cdn.com/content/v1/53c47d21e4b06bf16949f6c2/1628038738364-TACXN3VW3FVSX5ZMPM6T/Owl1.jpg?format=700w"
+                        "image": "harry-potter/middle/3.2.PNG"
                     },
                     {
                         "id": 3,
-                        "image": "https://mortalreader.files.wordpress.com/2016/09/whats-your-patronus.jpg?w=452&h=300&crop=1"
+                        "image": "harry-potter/middle/3.3.PNG"
                     },
                     {
                         "id": 4,
-                        "image": "https://images.squarespace-cdn.com/content/v1/53c47d21e4b06bf16949f6c2/1628038932771-YMNCQ8NZYU0IOYGEYNF2/Panther.jpg?format=700w"
+                        "image": "harry-potter/middle/3.4.PNG"
                     }
                 ],
                 "rightAnswerId": 3
@@ -177,7 +174,7 @@
             {
                 "id": 4,
                 "question": "Хто вбив Седріка Діггорі",
-                "questionImage": "https://assets.puzzlefactory.com/puzzle/369/720/original.webp",
+                "questionImage": "harry-potter/middle/4.PNG",
                 "answers": [
                     {
                         "id": 1,
@@ -202,24 +199,23 @@
         "quizHard": [
             {
                 "id": 1,
-                "question": "Хто вбив змію Волондеморта",
-                "typeImage": true,
+                "questionForImage": "Хто вбив змію Волондеморта",
                 "answers": [
                     {
                         "id": 1,
-                        "image": "https://www.youloveit.ru/uploads/gallery/main/553/neville-promo-pics-neville-longbottom.jpg"
+                        "image": "harry-potter/hard/1.1.PNG"
                     },
                     {
                         "id": 2,
-                        "image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Ron_Weasley_poster.jpg"
+                        "image": "harry-potter/hard/1.2.PNG"
                     },
                     {
                         "id": 3,
-                        "image": "https://news.store.rambler.ru/img/0d024f7e0a05350ca36a472ce109d70d?img-format=auto&img-1-resize=height:400,fit:max&img-2-filter=sharpen"
+                        "image": "harry-potter/hard/1.3.PNG"
                     },
                     {
                         "id": 4,
-                        "image": "https://avatars.mds.yandex.net/get-kinopoisk-post-img/2381555/d269b17090f2c098d258d315bba453f9/960x540"
+                        "image": "harry-potter/hard/1.4.PNG"
                     }
                 ],
                 "rightAnswerId": 1
@@ -255,11 +251,10 @@
     },
     {
         "id": "3",
-        "image": "avengers.PNG",
+        "image": "avengers",
         "name": "Месники",
         "amount": 0,
         "amountLevel": 0,
-        "background": "https://i.ytimg.com/vi/5PxaT3k8UI8/maxresdefault.jpg",
         "audio": "avengers.mp3",
         "quiz": [
             {
@@ -338,17 +333,16 @@
     },
     {
         "id": "4",
-        "image": "naruto.PNG",
+        "image": "naruto",
         "name": "Наруто",
         "amount": 5,
         "amountLevel": 2,
-        "background": "https://rare-gallery.com/thumbs/320083-Naruto-Sasuke-4K.jpg",
         "audio": "naruto.mp3",
         "quizEasy": [
             {
                 "id": 1,
                 "question": "Фамілія Мінато",
-                "questionImage": "https://pm1.aminoapps.com/7186/eb7a02caea643cdcc7f033d67c1ba5885aabd267r1-1920-1078v2_uhq.jpg",
+                "questionImage": "naruto/easy/1.PNG",
                 "answers": [
                     {
                         "id": 1,
@@ -388,24 +382,23 @@
         "quizMiddle": [
             {
                 "id": 2,
-                "question": "Як виглядає меч Тоцука",
-                "typeImage": true,
+                "questionForImage": "Як виглядає меч Тоцука",
                 "answers": [
                     {
                         "id": 1,
-                        "image": "https://qph.cf2.quoracdn.net/main-qimg-f4c4a2bdffdcd5386420182324eb2a0e-pjlq"
+                        "image": "naruto/middle/1.1.PNG"
                     },
                     {
                         "id": 2,
-                        "image": "https://sm.ign.com/ign_br/screenshot/default/espada-totsuka_3fc8.png"
+                        "image": "naruto/middle/1.2.PNG"
                     },
                     {
                         "id": 3,
-                        "image": "https://e1.pxfuel.com/desktop-wallpaper/329/328/desktop-wallpaper-uchiha-madara-perfect-susanoo-by-susanoomadara-madara-susanoo.jpg"
+                        "image": "naruto/middle/1.3.PNG"
                     },
                     {
                         "id": 4,
-                        "image": "https://imgix.ranker.com/list_img_v2/224/2900224/original/2900224?auto=format&q=50&fit=crop&fm=pjpg&dpr=2&crop=faces&h=185.86387434554973&w=355"
+                        "image": "naruto/middle/1.4.PNG"
                     }
                 ],
                 "rightAnswerId": 2
@@ -414,11 +407,10 @@
     },
     {
         "id": "5",
-        "image": "game-of-thrones.PNG",
+        "image": "game-of-thrones",
         "name": "Ігра Престолів",
         "amount": 0,
         "amountLevel": 0,
-        "background": "https://lifeimg.pravda.com/images/doc/6/3/63a8973-s8-trailer-1920.jpg",
         "audio": "game-of-thrones.mp3"
     }
 ]

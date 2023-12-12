@@ -3,7 +3,7 @@ import css from "./Modal.module.css";
 import { Quiz } from "components/Quiz/Quiz";
 
 export const Modal = ({
-  background,
+  image,
   audio,
   name,
   amount,
@@ -22,7 +22,7 @@ export const Modal = ({
       <div
         className={css.ContainerBackground}
         style={{
-          backgroundImage: `url(${background})`,
+          backgroundImage: `url(${require(`data/images/${image}/background.PNG`)})`,
         }}
       >
         <div className={css.Container}>
