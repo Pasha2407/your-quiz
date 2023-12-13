@@ -335,7 +335,7 @@
         "id": "4",
         "image": "naruto",
         "name": "Наруто",
-        "amount": 5,
+        "amount": 12,
         "amountLevel": 2,
         "audio": "naruto.mp3",
         "quizEasy": [
@@ -381,7 +381,7 @@
         ],
         "quizMiddle": [
             {
-                "id": 2,
+                "id": 1,
                 "questionForImage": "Як виглядає меч Тоцука",
                 "answers": [
                     {
@@ -402,6 +402,194 @@
                     }
                 ],
                 "rightAnswerId": 2
+            },
+            {
+                "id": 2,
+                "question": "Яким по рахунку Казекаге став Гаара",
+                "questionImage": "naruto/middle/2.PNG",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Третім"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Четвертим"
+                    },
+                    {
+                        "id": 3,
+                        "text": "П'ятим"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Шостим"
+                    }
+                ],
+                "rightAnswerId": 3
+            },
+            {
+                "id": 3,
+                "question": "Який ранг був в Наруто на початку війни шинобі",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Саннін"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Генін"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Джонін"
+                    }
+                ],
+                "rightAnswerId": 2
+            },
+            {
+                "id": 4,
+                "question": "Як звати цю Жабу",
+                "questionImage": "naruto/middle/4.PNG",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Гамабунта"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Гамакучі"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Гаматацу"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Гамакен"
+                    }
+                ],
+                "rightAnswerId": 1
+            },
+            {
+                "id": 5,
+                "question": "Гай перший хто відкрив 8 врат",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Так"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Ні"
+                    }
+                ],
+                "rightAnswerId": 2
+            },
+            {
+                "id": 6,
+                "question": "Командиром якої команди був Асума",
+                "questionImage": "naruto/middle/6.PNG",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "7"
+                    },
+                    {
+                        "id": 2,
+                        "text": "8"
+                    },
+                    {
+                        "id": 3,
+                        "text": "9"
+                    },
+                    {
+                        "id": 4,
+                        "text": "10"
+                    }
+                ],
+                "rightAnswerId": 4
+            },
+            {
+                "id": 7,
+                "questionForImage": "Вкого находилось ліве око Шисуї на момент нападу Пейна на Коноху",
+                "answers": [
+                    {
+                        "id": 1,
+                        "image": "naruto/middle/7.1.PNG"
+                    },
+                    {
+                        "id": 2,
+                        "image": "naruto/middle/7.2.PNG"
+                    },
+                    {
+                        "id": 3,
+                        "image": "naruto/middle/7.3.PNG"
+                    }
+                ],
+                "rightAnswerId": 3
+            },
+            {
+                "id": 8,
+                "question": "З якої деревни був перший напарник Ітачі",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Тумана"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Звука"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Трави"
+                    }
+                ],
+                "rightAnswerId": 1
+            },
+            {
+                "id": 9,
+                "question": "Хто вбив батьків Нагато",
+                "questionImage": "naruto/middle/9.PNG",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Мадара"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Ніндзя листа"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Ніндзя тумана"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Орочимару"
+                    }
+                ],
+                "rightAnswerId": 2
+            },
+            {
+                "id": 10,
+                "question": "Хто дав Кабуто днк Мадари",
+                "questionImage": "naruto/middle/10.PNG",
+                "answers": [
+                    {
+                        "id": 1,
+                        "text": "Обіто"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Орочимару"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Зетцу"
+                    }
+                ],
+                "rightAnswerId": 3
             }
         ]
     },
