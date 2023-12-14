@@ -20,8 +20,10 @@
     border: solid rgb(73, 85, 117);
 }
 
-.Header>nav>a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+@media screen and (min-width: 501px) {
+    .Header>nav>a:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }
 
 @media screen and (max-width: 500px) {

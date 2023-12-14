@@ -13,3 +13,9 @@
     justify-items: center;
     padding-left: 0;
 }
+
+@media screen and (max-width: 500px) {
+    .Container {
+        padding: 10px;
+    }
+}

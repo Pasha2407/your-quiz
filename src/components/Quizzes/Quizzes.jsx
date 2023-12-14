@@ -23,7 +23,12 @@ export const Quizzes = ({
   };
 
   return (
-    <div className={css.Container}>
+    <div
+      className={css.Container}
+      style={{
+        backgroundImage: `url(${require(`data/images/${image}/title.PNG`)})`,
+      }}
+    >
       <section className={css.Description}>
         <h4>{name}</h4>
         <p>Кількість всіх питань: {amount}</p>
@@ -32,9 +37,6 @@ export const Quizzes = ({
           <button onClick={openModal}>PLAY</button>
         </div>
       </section>
-
-      <img src={require(`data/images/${image}/title.PNG`)} alt=""></img>
-
       {isModal && (
         <Modal
           image={image}
