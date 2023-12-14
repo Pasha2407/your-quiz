@@ -55,7 +55,7 @@ export const Result = () => {
             <section>
               <p>Результат</p>
               <b>
-                Правильно {result.result} з {result.amount}
+                {result.result} з {result.amount}
               </b>
             </section>
             <section>
@@ -118,7 +118,7 @@ export const Result = () => {
               <section>
                 <p>Результат</p>
                 <b>
-                  Правильно {item.result} з {item.amount}
+                  {item.result} з {item.amount}
                 </b>
               </section>
               <section>

@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(2px);
 }
 
 .ContainerBackground {
@@ -58,4 +58,25 @@
 
 .Container>header>h3 {
     margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .Wrapper {
+        position: relative;
+        top: -500px;
+        left: -70px;
+    }
+
+    .Container {
+        width: 350px;
+    }
+
+    .Container>header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    audio {
+        width: 300px;
+    }
 }

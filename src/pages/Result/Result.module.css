@@ -60,7 +60,7 @@
     margin: 0 10px 5px 10px;
 }
 
-.ActiveItem>section>p,
+.ActiveItem>section>b,
 .Item>section>b {
     font-size: 14px;
 }
@@ -88,4 +88,62 @@
 .Item>div>button:hover {
     background-color: #af4c4c;
     color: white;
+}
+
+@media screen and (max-width: 500px) {
+
+    .Container {
+        padding: 5px 10px;
+    }
+
+    .Container>h2 {
+        font-size: 18px;
+    }
+
+    .ActiveItem,
+    .Item {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .ActiveItem>section,
+    .Item>section {
+        border-right: none;
+    }
+
+    .ActiveItem>section>p,
+    .Item>section>p,
+    .ActiveItem>section>b,
+    .Item>section>b {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .Container>div {
+        display: flex;
+        padding: 0;
+    }
+
+    .Container>div>h2 {
+        font-size: 18px;
+    }
+
+    .Container>div>button {
+        padding: 5px 10px 4px 10px;
+        border-radius: 5px;
+        cursor: default;
+        background-color: rgb(73, 85, 117);
+        border: 2px solid rgb(73, 85, 117);
+        color: white;
+    }
+
+    .Container>div>button:hover {
+        background-color: rgb(73, 85, 117);
+        color: white;
+    }
+
+    .Item>div {
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
 }

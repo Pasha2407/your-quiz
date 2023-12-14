@@ -23,3 +23,9 @@
 .Header>nav>a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 500px) {
+    .Header>nav>a {
+        font-size: 25px;
+    }
+}
