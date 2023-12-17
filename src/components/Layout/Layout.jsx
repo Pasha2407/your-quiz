@@ -12,7 +12,7 @@ export const Layout = () => {
               border: isActive ? "ridge white" : "",
             })}
           >
-            HOME
+            ВІКТОРИНИ
           </NavLink>
           <NavLink
             to="/result"
@@ -20,7 +20,7 @@ export const Layout = () => {
               border: isActive ? "ridge white" : "",
             })}
           >
-            RESULTS
+            РЕЗУЛЬТАТИ
           </NavLink>
         </nav>
       </header>

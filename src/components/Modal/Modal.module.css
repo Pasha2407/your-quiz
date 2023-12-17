@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 }
 
 .ContainerBackground {

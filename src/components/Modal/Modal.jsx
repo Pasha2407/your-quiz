@@ -27,7 +27,7 @@ export const Modal = ({
       >
         <div className={css.Container}>
           <div>
-            <button onClick={closeModal}>EXIT</button>
+            <button onClick={closeModal}>Вийти</button>
           </div>
           <header>
             <span>Вікторина</span>

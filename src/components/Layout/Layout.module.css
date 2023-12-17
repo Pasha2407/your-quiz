@@ -27,7 +27,23 @@
 }
 
 @media screen and (max-width: 500px) {
+    .Header>nav {
+        padding: 15px 20px;
+        gap: 10px;
+    }
+
     .Header>nav>a {
-        font-size: 25px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .Header>nav {
+        padding: 15px 10px;
+        gap: 7px;
+    }
+
+    .Header>nav>a {
+        font-size: 16px;
     }
 }

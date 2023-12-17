@@ -1,6 +1,7 @@
 import css from "./Quizzes.module.css";
 import { Modal } from "components/Modal/Modal";
 import { useState } from "react";
+import "index.css";
 
 export const Quizzes = ({
   image,
@@ -16,10 +17,12 @@ export const Quizzes = ({
 
   const openModal = () => {
     setIsModal(true);
+    document.body.classList.add("no-scroll");
   };
 
   const closeModal = () => {
     setIsModal(false);
+    document.body.classList.remove("no-scroll");
   };
 
   return (
@@ -34,7 +37,7 @@ export const Quizzes = ({
         <p>Кількість всіх питань: {amount}</p>
         <p>Рівнів складності: {amountLevel}</p>
         <div>
-          <button onClick={openModal}>PLAY</button>
+          <button onClick={openModal}>Почати</button>
         </div>
       </section>
       {isModal && (

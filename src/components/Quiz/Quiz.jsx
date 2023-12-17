@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import { Link } from "react-router-dom";
 import css from "./Quiz.module.css";
+import "index.css";
 
 export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -56,8 +57,6 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const nextQuestion = () => {
     setMessage("");
     setActiveQuestion(activeQuestion + 1);
-    console.log(result);
-    console.log(multiplier);
   };
 
   const clickAnswer = (id) => {
@@ -200,8 +199,9 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
                 className={item.text ? onListStyle : onListImageStyle}
                 onClick={() => !message && clickAnswer(item.id)}
               >
-                {item.text && item.text}
-                {item.image && (
+                {item.text ? (
+                  item.text
+                ) : (
                   <img
                     src={require(`data/images/${item.image}`)}
                     alt="Картинка не загрузилась"
@@ -216,13 +216,13 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
 
       {onNextButton && (
         <div className={css.Next}>
-          <button onClick={nextQuestion}>NEXT</button>
+          <button onClick={nextQuestion}>Далі</button>
         </div>
       )}
 
       {onFinishButton && (
         <div className={css.Finish}>
-          <button onClick={clickFinish}>FINISH</button>
+          <button onClick={clickFinish}>Фініш</button>
         </div>
       )}
 
@@ -233,7 +233,12 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
             свій результат
           </span>
           <div className={css.Link}>
-            <Link to="result">Перейти до результатів</Link>
+            <Link
+              to="result"
+              onClick={() => document.body.classList.remove("no-scroll")}
+            >
+              Перейти до результатів
+            </Link>
           </div>
         </div>
       )}
