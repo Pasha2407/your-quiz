@@ -33,7 +33,9 @@ export const ActiveResultItem = ({ result }) => {
           {result.result} з {result.amount}
         </b>
       </section>
-      <section>
+      <section
+        title={`Кількість балів залежить від кількості правельних відповідей, успішності відповідей підряд та часу проходження`}
+      >
         <p>Бали</p>
         <b>{result.points}</b>
       </section>

@@ -153,18 +153,27 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
         <div className={css.Level}>
           <span>Виберіть рівень складності</span>
           <div>
-            <button className={css.EasyButton} onClick={startEasy}>
+            <button
+              className={css.EasyButton}
+              onClick={startEasy}
+              title={`Питань ${quizEasy.length}`}
+            >
               Глядач
             </button>
             <button
               disabled={!quizMiddle}
               className={css.MiddleButton}
               onClick={startMiddle}
+              title={`Питань ${quizMiddle.length}`}
             >
               Знавець
             </button>
             {quizHard && (
-              <button className={css.HardButton} onClick={startHard}>
+              <button
+                className={css.HardButton}
+                onClick={startHard}
+                title={`Питань ${quizHard.length}`}
+              >
                 Експерт
               </button>
             )}

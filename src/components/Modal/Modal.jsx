@@ -14,7 +14,7 @@ export const Modal = ({
 }) => {
   const audioRef = useRef();
   useEffect(() => {
-    audioRef.current.volume = 0.2;
+    audioRef.current.volume = 0.1;
   });
 
   return (
