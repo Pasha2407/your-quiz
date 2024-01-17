@@ -28,10 +28,6 @@ export const ResultItem = ({ item, deleteResult }) => {
         <b>{item.avgTime} сек</b>
       </section>
       <section>
-        <p>Макс підряд правильно</p>
-        <b>{item.suborder}</b>
-      </section>
-      <section>
         <p>Результат</p>
         <b>
           {item.result} з {item.amount}

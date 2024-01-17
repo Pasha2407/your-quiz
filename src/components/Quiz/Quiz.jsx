@@ -86,31 +86,35 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
   const avgTime = Math.round(time / quizLevel.length);
 
   let timeBonus;
-  if (avgTime <= 5) timeBonus = 1.1;
-  else if (avgTime === 6) timeBonus = 1.08;
-  else if (avgTime === 7) timeBonus = 1.06;
-  else if (avgTime === 8) timeBonus = 1.04;
-  else if (avgTime === 9) timeBonus = 1.02;
-  else if (avgTime >= 10) timeBonus = 1;
-
-  let suborder = (multiplier - 1) / 0.25;
-  if (suborder < 1) suborder = 1;
+  if (avgTime <= 9) timeBonus = 1.1;
+  else if (avgTime === 10) timeBonus = 1.08;
+  else if (avgTime === 11) timeBonus = 1.06;
+  else if (avgTime === 12) timeBonus = 1.04;
+  else if (avgTime === 13) timeBonus = 1.02;
+  else if (avgTime >= 14) timeBonus = 1;
 
   const finalPoints = Math.round((points / quizLevel.length) * timeBonus);
 
-  let CurrentMinutes;
-  if (new Date().getMinutes() < 10) {
-    CurrentMinutes = `0${new Date().getMinutes()})`;
-  } else CurrentMinutes = `${new Date().getMinutes()})`;
+  let currentDay = new Date().getDate();
+  if (currentDay < 10) currentDay = `0${currentDay}`;
 
-  const currentMonth = new Date().getMonth() + 1;
+  let currentMonth = new Date().getMonth() + 1;
+  if (currentMonth < 10) currentMonth = `0${currentMonth}`;
+
+  let currentYear = new Date().getFullYear();
+
+  let currentHours = new Date().getHours();
+  if (currentHours < 10) currentHours = `0${currentHours}`;
+
+  let CurrentMinutes = new Date().getMinutes();
+  if (CurrentMinutes < 10) CurrentMinutes = `0${CurrentMinutes}`;
 
   const currentDate = [
-    `${new Date().getDate()} `,
-    `${currentMonth} `,
-    `${new Date().getFullYear()} `,
-    `(${new Date().getHours()}:`,
-    CurrentMinutes,
+    currentDay,
+    ` ${currentMonth} `,
+    currentYear,
+    ` (${currentHours}:`,
+    `${CurrentMinutes})`,
   ];
 
   const newResultData = {
@@ -121,7 +125,6 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
     amount: quizLevel.length,
     time: time,
     avgTime: avgTime,
-    suborder: suborder,
     result: result,
     points: finalPoints,
   };
@@ -175,6 +178,11 @@ export const Quiz = ({ name, quizEasy, quizMiddle, quizHard }) => {
             Питання {activeQuestion + 1} з {quizLevel.length}
           </i>
           <b>{quiz.question ? quiz.question : quiz.questionForImage}</b>
+          {quiz.audio && (
+            <audio style={{ opacity: 0.5 }} controls>
+              <source src={require(`data/audio/${quiz.audio}`)} />
+            </audio>
+          )}
           {quiz.questionImage && (
             <div className={css.QuestionImage}>
               <img
